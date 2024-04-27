@@ -106,14 +106,14 @@ html {
 	height: auto;
 	position: absolute;
 	border-radius: 100%;
-	
+	box-shadow: 0px 0px 200px 20px rgb(13, 0, 158);
 }
 
 .clicker {
 	border-radius: 100%;
 	margin-left: 25%;
-	margin-top: 17vh;
-	box-shadow: 0px 0px 300px 70px rgb(255, 0, 0);
+	
+	margin-top: 17vh;   
 }
 
 #clicker_span {
@@ -144,11 +144,15 @@ html {
 	justify-content: space-between;
 	padding-left: 0px;
 	list-style-type: none;
+	background-color: rgba(61, 62, 64, 0.83);
+	border-radius: 13px;
+	height: 50px;
+	padding: 10px 20px 0px 20px;
 }
 
 .container1 {
 	margin: auto;
-	width: 80%;
+	width: 90%;
 	margin-top: 63vh;
 }
 
@@ -158,8 +162,8 @@ html {
 }
 
 #boost_png {
-	width: 40px;
+	width: 30px;
 	margin-left: -4px;
 	padding-top: 0px;
-	margin-top: -2px;
+	margin-top: 0px;
 }
