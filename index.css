@@ -106,13 +106,12 @@ html {
 	height: auto;
 	position: absolute;
 	border-radius: 100%;
-	box-shadow: 0px 0px 200px 20px rgb(13, 0, 158);
+	box-shadow: 0px 0px 230px 30px rgb(13, 0, 158);
 }
 
 .clicker {
 	border-radius: 100%;
 	margin-left: 25%;
-	
 	margin-top: 17vh;   
 }
 
