@@ -1,0 +1,77 @@
+.bust_products {
+
+}
+
+#myDiv {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: ;
+  padding: 60px 15px;
+  padding-top: 7px;
+  padding-bottom: 0px;
+}
+ 
+.modal__content {
+  height: 100vh;
+  width: 100%;
+  padding: 40px 0px 10px 5px;
+  background: #f9f9f9;
+  position: relative;
+  box-shadow: 0 5px 15px black;
+}
+ 
+.modal__close-button {
+  background: #ff0000;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  background: none;
+  cursor: pointer;
+  transition: .3s;
+  outline: none;
+  transform: rotate(226deg);
+}
+ 
+/*.modal__close-button:hover {
+  transition: .3s;
+  transform: rotate(180deg);
+}*/
+ 
+.stone_shovel {
+  margin: 0px 15px 0px 10px;
+  background-color: rgba(117, 25, 25);
+  border-radius: 10px;
+  height: 26vh;
+  padding: 7px 7px;
+  text-align: center;
+  text-color: white;
+  margin-bottom: 2vh;
+/*  filter: blur(5px);*/
+
+}
+ 
+.modal__description {
+  font-size: 1rem;
+}
+
+.lll {
+
+	width: 110%;
+	margin-right: -10px;
+	margin-left: -15px;
+	height: 100vh;
+}

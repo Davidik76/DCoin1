@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(bust.css);
+
+
+html {
+/*	background-image: url(gradient_tsvet_sinij_155118_240x320.jpg);*/
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skvad {
+	background-color: rgba(61, 62, 64, 0.83);
+	border-radius: 13px;
+	width: 90%;
+	height: 50px;
+	margin: auto;
+	margin-top: 3vh;
+/*	box-shadow: 0px 0px 100px -19px rgb(255, 255, 255); */
+}
+
+.skvad_image {
+	display: inline-block;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+}
+
+#skvad_image {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+}
+
+.skvad_name {
+	font-size: 15px;
+	height: 10px;
+	display: inline-block;
+	margin-top: 0px;
+	padding-top: 5px;
+	padding-left: 12px;
+}
+
+.skvad_name, p {
+	color: white;
+	font-family: "Roboto";
+  font-weight: 400;
+  font-style: bold;
+	height: 20px;
+	display: inline-block;
+	margin-top: 0px;
+}
+
+.skvad_donation {
+	width: 90px;
+	height: 15px;
+	margin-top: 3px;
+	margin-left: 60px;
+	font-size: 13px;
+}
+
+.skvad_donation, p {
+	font-family: "Roboto";
+  	font-weight: 400;
+  	font-style: bold;
+}
+
+#skvad_donation_icon {
+	margin-top: 0px;
+}
+
+.skvad_user_quantity {
+	display: inline-block;
+	height: 15px;
+	/*border: solid;
+	border-color: white;*/
+	margin-left: auto;
+	margin-top: 17px;
+	margin-right: 20px;
+	float: right;
+	font-family: "Roboto";
+  	font-weight: 400;
+  	font-style: bold;
+}
+
+.div_dlya_raspolozhenia {
+	display: inline-block;
+	height: 50px;
+}
+
+#clicker_image {
+	width: 50%;
+	height: auto;
+	position: absolute;
+	border-radius: 100%;
+	
+}
+
+.clicker {
+	border-radius: 100%;
+	margin-left: 25%;
+	margin-top: 17vh;
+	box-shadow: 0px 0px 300px 70px rgb(255, 0, 0);
+}
+
+#clicker_span {
+	color: white;
+	font-size: 30px;
+}
+
+.score {
+	width: 1em;
+	margin: auto;
+	margin-top: 7vh;
+}
+
+.DCoin_balance {
+	width: 1em;
+	margin: auto;
+	display: inline-block;
+}
+
+#DCoin_balance_span {
+	color: white;
+	font-size: 15px;
+  font-style: bold;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.container1 {
+	margin: auto;
+	width: 80%;
+	margin-top: 63vh;
+}
+
+#wallet_icon {
+	width: 10px;
+
+}
+
+#boost_png {
+	width: 40px;
+	margin-left: -4px;
+	padding-top: 0px;
+	margin-top: -2px;
+}
