@@ -29,3 +29,15 @@ function hideDiv() {
             var div = document.getElementById("myDiv");
             div.style.display = "none"; 
         }
+
+
+var BackButton = WebApp.BackButton;
+BackButton.show();
+
+BackButton.onClick(function() {
+  WebApp.showAlert("Нет пути назад!");
+  BackButton.hide();
+});
+WebApp.onEvent('backButtonClicked', function() {
+  /* код */
+});
