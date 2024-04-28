@@ -32,7 +32,7 @@ function hideDiv() {
 
 
 var BackButton = WebApp.BackButton;
-BackButton.show();
+
 
 BackButton.onClick(function() {
   WebApp.showAlert("Нет пути назад!");
@@ -41,3 +41,7 @@ BackButton.onClick(function() {
 WebApp.onEvent('backButtonClicked', function() {
   /* код */
 });
+
+function back_button() {
+    BackButton.show();
+}
