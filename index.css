@@ -12,6 +12,9 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
 .roboto-regular {
@@ -25,7 +28,7 @@ html {
 	background-color: rgba(61, 62, 64, 0.83);
 	border-radius: 13px;
 	width: 90%;
-	height: 50px;
+	height: 60px;
 	margin: auto;
 	margin-top: 3vh;
 /*	box-shadow: 0px 0px 100px -19px rgb(255, 255, 255); */
@@ -34,14 +37,14 @@ html {
 .skvad_image {
 	display: inline-block;
 	float: left;
-	padding-top: 5px;
+	padding-top: 7px;
 	padding-bottom: 5px;
 	padding-left: 7px;
 }
 
 #skvad_image {
-	width: 40px;
-	height: 40px;
+	width: 47x;
+	height: 47px;
 	border-radius: 10px;
 }
 
@@ -50,7 +53,7 @@ html {
 	height: 10px;
 	display: inline-block;
 	margin-top: 0px;
-	padding-top: 5px;
+	padding-top: 9px;
 	padding-left: 12px;
 }
 
@@ -67,9 +70,9 @@ html {
 .skvad_donation {
 	width: 90px;
 	height: 15px;
-	margin-top: 3px;
-	margin-left: 60px;
-	font-size: 13px;
+	margin-top: 6px;
+	margin-left: 66px;
+	font-size: 14px;
 }
 
 .skvad_donation, p {
@@ -85,15 +88,11 @@ html {
 .skvad_user_quantity {
 	display: inline-block;
 	height: 15px;
-	/*border: solid;
-	border-color: white;*/
 	margin-left: auto;
-	margin-top: 17px;
-	margin-right: 20px;
+	margin-top: 23px;
+	margin-right: 12px;
 	float: right;
-	font-family: "Roboto";
-  	font-weight: 400;
-  	font-style: bold;
+	font-size: 14px;
 }
 
 .div_dlya_raspolozhenia {
@@ -102,7 +101,7 @@ html {
 }
 
 #clicker_image {
-	width: 50%;
+	width: 170px;
 	height: auto;
 	position: absolute;
 	border-radius: 100%;
@@ -110,8 +109,9 @@ html {
 }
 
 .clicker {
-	border-radius: 100%;
-	margin-left: 25%;
+	width: 170px;
+	height: 170px;
+	margin: auto;
 	margin-top: 17vh;   
 }
 
@@ -153,7 +153,7 @@ html {
 .container1 {
 	margin: auto;
 	width: 90%;
-	margin-top: 63vh;
+	margin-top: 15vh;
 }
 
 #wallet_icon {

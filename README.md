@@ -1,1 +1,2 @@
-# DCoin1
+# DCoin
+# DCoin

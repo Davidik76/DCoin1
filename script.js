@@ -31,17 +31,21 @@ function hideDiv() {
         }
 
 
-var BackButton = WebApp.BackButton;
 
+// telegram Web App
 
-BackButton.onClick(function() {
-  WebApp.showAlert("Нет пути назад!");
-  BackButton.hide();
-});
-WebApp.onEvent('backButtonClicked', function() {
-  /* код */
-});
+var WebApp = window.Telegram.WebApp;
 
-function back_button() {
-    BackButton.show();
-}
+WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+
+// var BackButton = WebApp.BackButton;
+
+// BackButton.show();
+
+// BackButton.onClick(function() {
+//     WebApp.showAlert("BackButton clicked");
+//     BackButton.hide();
+// });
+// WebApp.onEvent('backButtonClicked', function() {
+//     let clicker_span = 1000;
+// });

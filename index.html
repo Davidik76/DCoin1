@@ -1,81 +1,63 @@
-3<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>DCoin</title>
-	
+	<title><D>DCoin</D></title>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
 
-	<div class="DC_containers">
-
-	<div class="skvad">
-		<div class="div_dlya_raspolozhenia">
-		<div class="skvad_image">
-			<img id="skvad_image" src="clicker.jpg" alt="placeholder+image">
-		</div>
-		<div class="skvad_name">
-			<p>Розыгрыш Карена</p>
-		</div>
-		<div class="skvad_donation">
-			<p>💰 346,436</p>
-		</div>
-		</div>
-		<div class="skvad_user_quantity">
-			<p>👤 65k</p>
-		</div>
-	</div> 
-
-
-	<div class="score">
-		<div class="click_score">
-			<span id="clicker_span">0</span>
-		</div>
-		<!-- <div class="DCoin_balance">
-			<span id="DCoin_balance_span">0</span>
-		</div>
- -->	</div>
+<div class="DC_containers">
+<div class="skvad">
+	<div class="div_dlya_raspolozhenia">
+	<div class="skvad_image">
+		<img id="skvad_image" src="clicker.jpg" alt="placeholder+image">
+	</div>
+	<div class="skvad_name">
+		<p>Розыгрыш Карена</p>
+	</div>
+	<div class="skvad_donation">
+		<p>💰 346,489</p>
+	</div>
+	</div>
+	<div class="skvad_user_quantity">
+		<p>👤 65k</p>
+	</div>
+</div> 
 
 
-	<div class="clicker"><img onclick="changeSize(this)" id="clicker_image" src="clicker.jpg" alt="."></div>
+<div class="score">
+	<div class="click_score">
+		<span id="clicker_span">0</span>
+	</div>
+</div>
+
+
+<div class="clicker">
+	<img onclick="changeSize(this)" id="clicker_image" src="clicker.jpg" alt=".">
+</div>
+
 
 <div class="container1">
 	<ul class="menu">
 		<li><img src="http://dummyimage.com/40x40/" alt="."></li>
   		<li onclick="back_button()" id="boost_icon"> 
-  			<!-- onclick="showDiv() --><a href="boost.html">
-  			<img id="boost_png" src="shovel.png" alt=".">
-  		</a>
+  			<a href="boost.html">
+  				<img id="boost_png" src="shovel.png" alt=".">
+  			</a>
   		</li>
-  		<li><img src="http://dummyimage.com/40x40/" alt="."></li>
-  		<li><img src="http://dummyimage.com/40x40/" alt="."></li> 
+  		<li>
+  			<img src="http://dummyimage.com/40x40/" alt=".">
+  		</li>
+  		<li>
+  			<img src="http://dummyimage.com/40x40/" alt=".">
+  		</li> 
 	</ul>
 </div>
-
 </div>
 
-
-		<!-- Модальное окно -->
-<div class="modal" id="myDiv">
-	<div class="lll">
-  <div class="modal__content">
-    <button class="modal__close-button" onclick="hideDiv()"><img src="boost.png" width="18" alt=""></button>
-    <!-- Контент модального окна -->
-    <div class="stone_shovel">
-    	<p>Бусты для кликов</p>
-    </div>
-    <div class="stone_shovel">
-    	<p>Бусты для автокликера</p>
-    </div>
-    <div class="stone_shovel">
-    	<p>Ещё что-то</p>
-    </div>
-  </div>
-</div>
-</div>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
 <script src="script.js"></script>
 
 	
