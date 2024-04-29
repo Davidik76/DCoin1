@@ -40,8 +40,6 @@ function hideDiv() {
 
 
 
-
-
 // telegram Web App
 
 var WebApp = window.Telegram.WebApp;
