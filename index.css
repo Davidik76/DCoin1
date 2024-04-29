@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(bust.css);
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html {
 /*	background-image: url(gradient_tsvet_sinij_155118_240x320.jpg);*/
@@ -15,6 +15,9 @@ html {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .roboto-regular {
@@ -27,7 +30,7 @@ html {
 	
 	background-color: rgba(61, 62, 64, 0.83);
 	border-radius: 13px;
-	width: 90%;
+	width: 95%;
 	height: 60px;
 	margin: auto;
 	margin-top: 3vh;
@@ -59,9 +62,6 @@ html {
 
 .skvad_name, p {
 	color: white;
-	font-family: "Roboto";
-  font-weight: 400;
-  font-style: bold;
 	height: 20px;
 	display: inline-block;
 	margin-top: 0px;
@@ -76,9 +76,9 @@ html {
 }
 
 .skvad_donation, p {
-	font-family: "Roboto";
-  	font-weight: 400;
-  	font-style: bold;
+	font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #skvad_donation_icon {
@@ -153,7 +153,7 @@ html {
 .container1 {
 	margin: auto;
 	width: 90%;
-	margin-top: 15vh;
+	margin-top: 21vh;
 }
 
 #wallet_icon {
@@ -167,3 +167,52 @@ html {
 	padding-top: 0px;
 	margin-top: 0px;
 }
+
+/*.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+*/

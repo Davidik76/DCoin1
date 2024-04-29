@@ -5,12 +5,19 @@ function changeSize(button) {
             }, 100);
         }
 
-let clicker_span = 513435;
+let clicker_span = 50056456;
 
 const clicker_image = document.getElementById('clicker_image');
 const clicker_spanDisplay = document.getElementById('clicker_span');
 
 clicker_image.addEventListener('click', function() {
+clicker_span++;
+clicker_spanDisplay.textContent = + clicker_span;
+});
+
+const cl_1_1 = document.getElementById('CL_1_1');
+
+cl_1_1.addEventListener('click', function() {
 clicker_span++;
 clicker_spanDisplay.textContent = + clicker_span;
 });
@@ -32,20 +39,26 @@ function hideDiv() {
 
 
 
+
+
+
 // telegram Web App
 
 var WebApp = window.Telegram.WebApp;
 
 WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
 
-// var BackButton = WebApp.BackButton;
+var BackButton = WebApp.BackButton;
 
-// BackButton.show();
+BackButton.show();
 
-// BackButton.onClick(function() {
-//     WebApp.showAlert("BackButton clicked");
-//     BackButton.hide();
-// });
-// WebApp.onEvent('backButtonClicked', function() {
-//     let clicker_span = 1000;
-// });
+BackButton.onClick(function() {
+    WebApp.showAlert("BackButton clicked");
+    BackButton.hide();
+});
+WebApp.onEvent('backButtonClicked', function() {
+    let clicker_span = 1000;
+});
+
+
+

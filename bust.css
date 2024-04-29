@@ -1,77 +1,134 @@
-.bust_products {
 
-}
 
-#myDiv {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
-  justify-content: center;
-  align-items: flex-start;
-  overflow-y: ;
-  padding: 60px 15px;
-  padding-top: 7px;
-  padding-bottom: 0px;
-}
- 
-.modal__content {
-  height: 100vh;
-  width: 100%;
-  padding: 40px 0px 10px 5px;
-  background: #f9f9f9;
-  position: relative;
-  box-shadow: 0 5px 15px black;
-}
- 
-.modal__close-button {
-  background: #ff0000;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  position: absolute;
-  left: 7px;
-  top: 3px;
-  background: none;
-  cursor: pointer;
-  transition: .3s;
-  outline: none;
-  transform: rotate(226deg);
-}
- 
-/*.modal__close-button:hover {
-  transition: .3s;
-  transform: rotate(180deg);
-}*/
- 
-.stone_shovel {
-  margin: 0px 15px 0px 10px;
-  background-color: rgba(117, 25, 25);
-  border-radius: 10px;
-  height: 26vh;
-  padding: 7px 7px;
+.back_button {
+  border-radius: 13px;
+  padding: 3px 5px 2px 5px;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: mediumseagreen;
   text-align: center;
+  width: 50px;
+  height: 20px;
+}
+
+.back_button, text{
   text-color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+/*  font-style: normal;*/
+}
+
+.bust_div {
+  border-radius: 15px;
+  width: 90%;
+  height: 45.9vh;
+  margin: auto;
+  background-color: rgb(54, 54, 54);
+  margin-bottom: 3vh;
+  padding: 10px;
+}
+
+
+.bust_div_block {
+  margin-bottom: 4.1vh;
+  background-color: white;
+  width: 100%;
+  height: 6.3vh;
+  margin-right: auto;
+  margin-left: auto;
+  /*background-color: rgba(103, 103, 103, 1);
+  box-shadow: 2px 2px 100px rgba(23, 23, 23, 0.36);*/
+  background-color: rgba(103, 103, 103, 0);
+  border-radius: 13px;
+}
+
+.bust_div_block_absences {
+  filter: blur(5px);
   margin-bottom: 2vh;
-/*  filter: blur(5px);*/
-
+  background-color: white;
+  width: 100%;
+  height: 9vh;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(61, 62, 64, 0.83);
+  border-radius: 13px;
 }
- 
-.modal__description {
-  font-size: 1rem;
+
+.div_dlya_raspolozhenia_bust {
+  display: inline-block;
+  height: 50px;
 }
 
-.lll {
-
-	width: 110%;
-	margin-right: -10px;
-	margin-left: -15px;
-	height: 100vh;
+.bust_block_image {
+  display: inline-block;
+  float: left;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
 }
+
+#bust_block_image {
+  width: 47x;
+  height: 47px;
+  border-radius: 10px;
+}
+
+.bust_block_name {
+  font-size: 15px;
+  height: 10px;
+  display: inline-block;
+  margin-top: 0px;
+  padding-top: 9px;
+  padding-left: 12px;
+}
+
+.bust_block_nam, p {
+  color: white;
+  height: 20px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.bust_block_donation {
+    width: 100%;
+  height: 15px;
+  margin-top: 6px;
+  margin-left: 66px;
+  font-size: 14px;
+}
+
+.bust_block_donation, p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bust_block_icon {
+  display: inline-block;
+  height: 15px;
+  margin-left: auto;
+  margin-top: 3vh;
+  margin-right: 12px;
+  float: right;
+  font-size: 14px;
+}
+
+.bust_block_upgrade_n {
+  color: rgba(212, 212, 212, 1);
+}
+
+.CL_lvl1 {
+    filter: blur(10px);
+}
+
+* hr {
+  width: 95%;
+}
+
+.bust_div_name1 {
+  margin-left: 13px;
+}
+
+.bust_div_name2 {
+  margin-left: 13px;
