@@ -5,7 +5,7 @@ function changeSize(button) {
             }, 100);
         }
 
-let clicker_span = 50056456;
+let clicker_span = 3982;
 
 const clicker_image = document.getElementById('clicker_image');
 const clicker_spanDisplay = document.getElementById('clicker_span');
