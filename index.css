@@ -114,8 +114,8 @@ html {
 .dialog {
 	position: absolute;
 	margin-top: -97vh;
-	width: 90%;
-	height: 90vh;
+	width: 100%;
+	height: 100vh;
 }
 
 .p13 {
@@ -125,7 +125,7 @@ html {
 .div14 { 
 	color: white;
 	margin-top: 35px;
-	margin-left: 25%;
-	width: 55%;
+	margin-left: 20%;
+	width: 60%;
 	display: inline-block;
 }
