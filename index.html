@@ -4,33 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<title>DCoin</title>
+	<title><D>DCoin</D></title>
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
 
 <div class="DC_containers">
 <div class="skvad">
-	<div class="div_dlya_raspolozhenia">
-	<div class="skvad_image">
-		<img id="skvad_image" src="clicker.jpg" alt=".">
-	</div>
-	<div class="skvad_name">
-		<p>Розыгрыш Карена</p>
-	</div>
-	<div class="skvad_donation">
-		<p>💰 346,489</p>
-	</div>
-	</div>
-	<div class="skvad_user_quantity">
-		<p>👤 65k</p>
-	</div>
+	<div class="div14">Курс вывода: 10,000 💎 = 1 G</div>
 </div> 
 
 
 <div class="score">
 	<div class="click_score">
-		<span id="clicker_span"><p id="clickCount">КЛИКНИ</p></span>
+		<span id="clicker_span"><p id="clickCount">💎 0</p></span>
 	</div>
 </div>
 
@@ -38,27 +25,53 @@
 	<img id="clickBtn" src="clicker.jpg" alt=".">
 </div>
 
+<form id="tg" name="submit-to-google-sheet">
+	<p>Минимальный вывод от 10 G</p><br>
+	<label class="label">Количество G для вывода</label>
+	<br><br>
+	<input id="elem1" type="number" name="vivod" id="vivod" placeholder="" required>
+	<br><br>
+	<label  class="label">Телеграм аккаунт (начинается на @)</label>
+	<br><br>
+	<input id="tg_user" type="text" name="tg_user" id="tg_user" placeholder="" required>
+	<br><br>
+	<button type="submit">Отправить</button>
+	<div id="str"></div>
+</form>
 
 <div class="container1">
-	<ul class="menu">
-		<li><img src="http://dummyimage.com/40x40/" alt="."></li>
-  		<li onclick="back_button()" id="boost_icon"> 
-  			<a href="boost.html">
-  				<img id="boost_png" src="shovel.png" alt=".">
-  			</a>
-  		</li>
-  		<li>
-  			<img src="http://dummyimage.com/40x40/" alt=".">
-  		</li>
-  		<li>
-  			<img src="http://dummyimage.com/40x40/" alt=".">
-  		</li> 
-	</ul>
+	
 </div>
 </div>
+
+
+<dialog open class="dialog">
+	<p class="p13">Ошибка - вы сликшом крутой. <br> Обновите страницу чтобы это окно исчезло</p>
+	<form method="dialog">
+	  
+	</form>
+  </dialog>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script src="script.js"></script>
-
+  
+  <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxVuxZAQyoKq21OfFUSF0KqF2lX9LiHEBvIQxoeALo5IbnCr4aZ5Dv6tcj_N024ZGKz/exec'
+	const form = document.forms['submit-to-google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response =>{
+			setTimeout(function(){
+				sendText.innerHTML = ""
+			}, 3000)
+		})
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
 	
 </body>
 </html>

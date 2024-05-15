@@ -1,84 +1,33 @@
-// function changeSize(button) {
-//             button.style.transform = 'scale(1.02)';
-//             setTimeout(() => {
-//                 button.style.transform = 'scale(1)';
-//             }, 100);
-//         }
+let a = 1;
+let clickCount = localStorage.getItem('clickCount') || 0;
+const clickBtn = document.getElementById('clickBtn');
+const clickCountDisplay = document.getElementById('clickCount');
 
-// let clicker_span = 50056456;
+clickCountDisplay.textContent = `💎 ${clickCount}`;
 
-// const clicker_image = document.getElementById('clicker_image');
-// const clicker_spanDisplay = document.getElementById('clicker_span');
+clickBtn.addEventListener('click', () => {
+  clickCount++;
+  localStorage.setItem('clickCount', clickCount);
+  clickCountDisplay.textContent = `💎 ${clickCount}`;
+});
+    
 
-// clicker_image.addEventListener('click', function() {
-// clicker_span++;
-// clicker_spanDisplay.textContent = + clicker_span;
-// });
+document.getElementById('tg').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var val = document.getElementById('elem1').value;
+  if (clickCount >= val && val >= 10000) {
+  clickCount-=val; 
+  alert('Заявка успешно отправлена');
+  localStorage.setItem('clickCount', clickCount);
+  clickCountDisplay.textContent = `💎 ${clickCount}`; 
+} else {
+  alert('Ошибка');
+}})
 
-// const cl_1_1 = document.getElementById('CL_1_1');
+// Сначала скрываем див с классом "div3" при загрузке страницы
+document.querySelector(".dialog").style.display = "none";
 
-// cl_1_1.addEventListener('click', function() {
-// clicker_span++;
-// clicker_spanDisplay.textContent = + clicker_span;
-// });
-
-// function boost_modal() {
-//     var boost_modal = document.getElementById("boost_modal");
-//     boost_modal.classList.add("flex");
-// }
-
-// function showDiv() {
-//             var div = document.getElementById("myDiv");
-//             div.style.display = "flex"; 
-//         }
-
-// function hideDiv() {
-//             var div = document.getElementById("myDiv");
-//             div.style.display = "none"; 
-//         }
-
-
-
-
-
-
-// // telegram Web App
-
-// var WebApp = window.Telegram.WebApp;
-
-// WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
-
-// var BackButton = WebApp.BackButton;
-
-// BackButton.show();
-
-// BackButton.onClick(function() {
-//     WebApp.showAlert("BackButton clicked");
-//     BackButton.hide();
-// });
-// WebApp.onEvent('backButtonClicked', function() {
-//     let clicker_span = 1000;
-// });
-
-
- let clickCount = localStorage.getItem('clickCount') || 0;
-    const clickBtn = document.getElementById('clickBtn');
-    const clickCountDisplay = document.getElementById('clickCount');
-
-    clickCountDisplay.textContent = `${clickCount}`;
-
-    clickBtn.addEventListener('click', () => {
-      clickCount++;
-      localStorage.setItem('clickCount', clickCount);
-      clickCountDisplay.textContent = `${clickCount}`;
-    });
-
-
-
-
-
-
-
-
-
-
+// По прошествии 1 минуты показываем див с классом "div3"
+setTimeout(() => {
+    document.querySelector(".dialog").style.display = "block";
+}, 60000); // 60000 миллисекунд = 1 минута
