@@ -20,15 +20,72 @@ html {
   font-style: normal;
 }
 
+body {
+	overflow: hidden;
+  }
+
+* p, h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+#clickCount {
+	font-size: 40px;
+}
+
+
+.div16 { 
+	color: white;
+	margin-top: 19px;
+	padding-left: 0px;
+	width: 79%;
+	display: inline-block;
+	font-size: 25px;
+}
+
+.div15 {
+	display: inline-block;
+	border: 2px solid rgb(255, 255, 255);
+	background-color: rgba(61, 62, 64, 0.83);
+	border-radius: 25px;
+	width: 46.25%;
+	height: 7vh;
+	margin-top: 4vh;
+	padding-left: 0px;
+	text-align: center;
+}
+
+.div19 {
+	color: white;
+	margin-top: 19px;
+	padding-left: 0px;
+	width: 79%;
+	display: inline-block;
+	font-size: 25px;
+}
+
+.div18 {
+	margin-right: 2.25%;
+	margin-left: 2.25%;
+	display: inline-block;
+  	border: 1px solid rgb(255, 255, 255);
+	background-color: rgba(61, 62, 64, 0.83);
+	border-radius: 25px;
+	width: 46.25%;
+	height: 7vh;
+	margin-top: 4vh;
+	padding-left: 0px;
+	text-align: center;
+}
+
 .skvad {
 	background-color: rgba(61, 62, 64, 0.83);
-	border-radius: 13px;
+	border-radius: 25px;
 	width: 95%;
 	height: 9.3vh;
 	margin: auto;
@@ -45,7 +102,7 @@ html {
 }
 
 #clickBtn {
-	width: 230px;
+	width: 330px;
 	height: auto;
 	position: absolute;
 	border-radius: 100%;
@@ -53,10 +110,11 @@ html {
 }
 
 .clicker {
-	width: 230px;
+	width: 330px;
 	height: 35vh;
 	margin: auto;
-	margin-top: 14vh;   
+	margin-top: 13vh;   
+	
 }
 
 #clicker_span {
@@ -69,7 +127,8 @@ html {
 	text-align: center;
 	width: 90%;
 	margin: auto;
-	margin-top: 7vh;
+	padding-right: 20px;
+	margin-top: 10vh;
 }
 
 .DCoin_balance {
@@ -101,9 +160,11 @@ html {
 	margin-top: 4vh;
 }
 
-
-.label {
+.close_button {
 	color: white;
+}
+.label {
+	color: rgb(255, 255, 255);
 	margin-bottom: 5vh;
 }
 
@@ -111,11 +172,20 @@ html {
 	margin-top: 10px;
 }
 
+.dialog h1 {
+	color: white;
+}
+
 .dialog {
 	position: absolute;
-	margin-top: -97vh;
+	display: block;
+    top: 0px;
+    bottom: 0px;
+    margin-top: 0px;
+    left: 0px;
 	width: 100%;
 	height: 100vh;
+	background-color: rgb(37, 39, 53);
 }
 
 .p13 {
@@ -124,8 +194,300 @@ html {
 
 .div14 { 
 	color: white;
-	margin-top: 20px;
-	margin-left: 3%;
-	width: 70%;
+	margin-top: 25px;
+	text-align: center;
+	width: 100%;
 	display: inline-block;
+	font-size: 25px;
 }
+
+#progress-bar {
+	width: 100%;
+	margin-top: 7vh;
+	height: 30px;
+}
+
+.progressbar_div {
+	width: 90%;
+	margin: auto;
+}
+
+
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+main {
+  padding: 0px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alert {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 95%;
+  height: 60px;
+}
+
+.alert-2-success {
+  border-bottom: 4px solid #ffffff;
+  border-bottom-width: 20%;
+  background-color: rgba(30, 255, 0, 0.719);
+  width: 100%;
+}
+.alert-2-success .alert-title {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.alert-title {
+	text-align: center;
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin: auto;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.alert-content {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+} */
+
+  .toast {
+	z-index: 1000;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	border-radius: 12px;
+	background: #fff;
+	padding: 20px 35px 20px 25px;
+	box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transform: translateX(calc(100% + 30px));
+	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+  
+.div20 {
+	
+	display: none;
+}
+
+
+  .toast.active {
+	transform: translateX(0%);
+  }
+  
+  .toast .toast-content {
+	display: flex;
+	align-items: center;
+  }
+  
+  .toast-content .check {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	min-width: 35px;
+	background-color: #4070f4;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 50%;
+  }
+  
+  .toast-content .message {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+  }
+  
+  .message .text {
+	font-size: 16px;
+	font-weight: 400;
+	color: #666666;
+  }
+  
+  .message .text.text-1 {
+	font-weight: 600;
+	color: #333;
+  }
+  
+  .toast .close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	padding: 5px;
+	cursor: pointer;
+	opacity: 0.7;
+  }
+  
+  .toast .close:hover {
+	opacity: 1;
+  }
+  
+  .toast .progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+  
+  }
+  
+  .toast .progress:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #4070f4;
+  }
+  
+  .progress.active:before {
+	animation: progress 5s linear forwards;
+  }
+  
+  @keyframes progress {
+	100% {
+	  right: 100%;
+	}
+  }
+  
+
+  
+  .toast.active ~ button {
+	pointer-events: none;
+  }
+  
+
+  .a678 {
+	color: black;
+  }
+
+
+
+
+/* кроссбар по нулям */ 
+
+
+.toast1 {
+	z-index: 1000;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	border-radius: 12px;
+	background: #fff;
+	padding: 20px 35px 20px 25px;
+	box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transform: translateX(calc(100% + 30px));
+	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+  
+.div201 {
+	
+	display: none;
+}
+  
+  .toast1.active1 {
+	transform: translateX(0%);
+  }
+  
+  .toast1 .toast-content {
+	display: flex;
+	align-items: center;
+  }
+  
+  .toast-content .check {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	min-width: 35px;
+	background-color: #4070f4;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 50%;
+  }
+  
+  .toast-content .message1 {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+  }
+  
+  .message1 .text {
+	font-size: 16px;
+	font-weight: 400;
+	color: #666666;
+  }
+  
+  .message1 .text.text-1 {
+	font-weight: 600;
+	color: #333;
+  }
+  
+  .toast1 .close1 {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	padding: 5px;
+	cursor: pointer;
+	opacity: 0.7;
+  }
+  
+  .toast1 .close1:hover {
+	opacity: 1;
+  }
+  
+  .toast1 .progress1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+  
+  }
+  
+  .toast1 .progress1:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #4070f4;
+  }
+  
+  .progress1.active1:before {
+	animation: progress 5s linear forwards;
+  }
+  
+  @keyframes progress1 {
+	100% {
+	  right: 100%;
+	}
+  }
+  
+  .toast1.active1 ~ button {
+	pointer-events: none;
+  }
+  
+
+  .a6781 {
+	color: black;
+  }
+
+
+  .r6598 {
+	margin-left: 10px;
+  }
