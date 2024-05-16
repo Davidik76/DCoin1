@@ -102,7 +102,7 @@ body {
 }
 
 #clickBtn {
-	width: 330px;
+	width: 250px;
 	height: auto;
 	position: absolute;
 	border-radius: 100%;
@@ -110,7 +110,7 @@ body {
 }
 
 .clicker {
-	width: 330px;
+	width: 250px;
 	height: 35vh;
 	margin: auto;
 	margin-top: 13vh;   
