@@ -50,7 +50,6 @@ body {
 
 .div15 {
 	display: inline-block;
-	border: 2px solid rgb(255, 255, 255);
 	background-color: rgba(61, 62, 64, 0.83);
 	border-radius: 25px;
 	width: 46.25%;
@@ -73,7 +72,6 @@ body {
 	margin-right: 2.25%;
 	margin-left: 2.25%;
 	display: inline-block;
-  	border: 1px solid rgb(255, 255, 255);
 	background-color: rgba(61, 62, 64, 0.83);
 	border-radius: 25px;
 	width: 46.25%;
