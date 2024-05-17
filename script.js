@@ -19,7 +19,7 @@ clickBtn.addEventListener('click', () => {
   }
 });
 
-document.getElementById('tg').addEventListener('submit', function(e) {
+document.getElementById('next').addEventListener('click', function(e) {
   e.preventDefault();
   var val = document.getElementById('elem1').value;
   if (clickCount >= val && val >= 1) {
@@ -35,6 +35,10 @@ document.querySelector(".dialog").style.display = "none";
 
 function div16() {
   document.querySelector(".dialog").style.display = "block";
+}
+
+function closeModal() {
+  document.querySelector(".dialog").style.display = "none";
 }
 
 // Уведомления
