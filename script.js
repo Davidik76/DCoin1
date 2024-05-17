@@ -140,12 +140,12 @@ closeIcon1.addEventListener("click", () => {
 
 // Кнопка назад 
 
-var BackButton = WebApp.BackButton;
-BackButton.onClick(function back() {
+// var BackButton = WebApp.BackButton;
+// BackButton.onClick(function back() {
     
-    WebApp.showAlert("BackButton clicked");
-    BackButton.hide();
-});
-WebApp.onEvent('backButtonClicked', function() {
-  document.querySelector(".dialog").style.display = "none";
-});
+//     WebApp.showAlert("BackButton clicked");
+//     BackButton.hide();
+// });
+// WebApp.onEvent('backButtonClicked', function() {
+//   document.querySelector(".dialog").style.display = "none";
+// });
