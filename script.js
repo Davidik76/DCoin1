@@ -3,8 +3,6 @@ let clickCount = localStorage.getItem('clickCount') || 0;
 const clickBtn = document.getElementById('clickBtn');
 const clickCountDisplay = document.getElementById('clickCount');
 const progress_bar = document.getElementById('progress-bar');
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxN782mrGwCcXkiZ3Wk9WUnzcQjiSHOjcsF6RPeRCCGkJCyU0ZNXhfvjuZy329ZXDBFNw/exec'
-const form = document.forms['submit-to-google-sheet']
 
 clickCountDisplay.textContent = `💎 ${clickCount}`;
 
@@ -43,6 +41,14 @@ function closeModal() {
 
 // Уведомления
 
+let g = 1;
+
+function div18() {
+  g = 2;
+  5000
+  g = 1;
+}
+
 const buttonnot = document.querySelector(".notibutt"),
   toast = document.querySelector(".toast");
 (closeIcon = document.querySelector(".close")),
@@ -57,7 +63,8 @@ function test67() {
 
   timer1 = setTimeout(() => {
     toast.classList.remove("active");
-  }, 5000); //1s = 1000 milliseconds
+      document.querySelector(".div20").style.display = "none";
+  }, 5000);
 
   timer2 = setTimeout(() => {
     progress.classList.remove("active");
@@ -66,6 +73,8 @@ function test67() {
 
 closeIcon.addEventListener("click", () => {
   toast.classList.remove("active");
+  document.querySelector(".div20").style.display = "none";
+
 
   setTimeout(() => {
     progress.classList.remove("active");
@@ -73,7 +82,12 @@ closeIcon.addEventListener("click", () => {
 
   clearTimeout(timer1);
   clearTimeout(timer2);
+
+  toast.classList.remove("active");
+   document.querySelector(".div20").style.display = "none";
 });
+
+ 
 
 // crossbar
 
@@ -91,6 +105,7 @@ function test65() {
 
   timer11 = setTimeout(() => {
     toast1.classList.remove("active1");
+      document.querySelector(".div201").style.display = "none";
   }, 5000); //1s = 1000 milliseconds
 
   timer21 = setTimeout(() => {
@@ -100,6 +115,7 @@ function test65() {
 
 closeIcon1.addEventListener("click", () => {
   toast1.classList.remove("active1");
+    document.querySelector(".div201").style.display = "none";
 
   setTimeout(() => {
     progress1.classList.remove("active1");
@@ -107,4 +123,7 @@ closeIcon1.addEventListener("click", () => {
 
   clearTimeout(timer11);
   clearTimeout(timer21);
+
+    toast1.classList.remove("active1");
+   document.querySelector(".div201").style.display = "none";
 });
