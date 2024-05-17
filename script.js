@@ -1,3 +1,5 @@
+expand();
+
 let a = 1;
 let clickCount = localStorage.getItem('clickCount') || 0;
 const clickBtn = document.getElementById('clickBtn');
