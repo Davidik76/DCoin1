@@ -13,6 +13,13 @@ tg.expand();
 
 // });
 
+let closepage = document.getElementById("closepage");
+
+closepage.addEventListener("click", () => {
+  tg.close();
+});
+  
+
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
     clickCount++;
