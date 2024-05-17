@@ -9,6 +9,17 @@ clickCountDisplay.textContent = `💎 ${clickCount}`;
 
 tg.expand();
 
+var BackButton = WebApp.BackButton;
+BackButton.show();
+BackButton.onClick(function() {
+  WebApp.showAlert("Нет пути назад!");
+  BackButton.hide();
+});
+WebApp.onEvent('backButtonClicked', function() {
+  /* код */
+});
+
+
 // Telegram.WebApp.onEvent(themeChanged,function(){
 
 // });
