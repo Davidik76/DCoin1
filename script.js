@@ -33,6 +33,7 @@ document.querySelector(".dialog").style.display = "none";
 
 function div16() {
   document.querySelector(".dialog").style.display = "block";
+  BackButton.show();
 }
 
 function closeModal() {
@@ -126,4 +127,18 @@ closeIcon1.addEventListener("click", () => {
 
     toast1.classList.remove("active1");
    document.querySelector(".div201").style.display = "none";
+});
+
+
+
+// Кнопка назад 
+
+var BackButton = WebApp.BackButton;
+BackButton.onClick(function back() {
+    
+    WebApp.showAlert("BackButton clicked");
+    BackButton.hide();
+});
+WebApp.onEvent('backButtonClicked', function() {
+  document.querySelector(".dialog").style.display = "none";
 });
