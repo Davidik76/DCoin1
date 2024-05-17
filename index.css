@@ -4,8 +4,8 @@
 
 html {
 /*	background-image: url(gradient_tsvet_sinij_155118_240x320.jpg);*/
-background-color: var(--tg-theme-bg-color);
-/* background-color: black; */
+/* background-color: var(--tg-theme-bg-color); */
+background-color: black;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
