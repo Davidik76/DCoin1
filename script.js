@@ -7,7 +7,7 @@ const progress_bar = document.getElementById('progress-bar');
 
 clickCountDisplay.textContent = `💎 ${clickCount}`;
 
-// tg.expand();
+tg.expand();
 
 // Telegram.WebApp.onEvent(themeChanged,function(){
 
