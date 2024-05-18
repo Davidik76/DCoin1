@@ -24,11 +24,11 @@ tg.expand();
 
 // });
 
-let closepage = document.getElementById("closepage");
+// let closepage = document.getElementById("closepage");
 
-closepage.addEventListener("click", () => {
-  tg.close();
-});
+// closepage.addEventListener("click", () => {
+//  tg.close();
+// });
   
 
 clickBtn.addEventListener('click', () => {
