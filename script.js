@@ -1,64 +1,65 @@
 let tg = window.Telegram.WebApp;
 let a = 1;
 let clickCount = localStorage.getItem('clickCount') || 0;
-const clickBtn = document.getElementById('clickBtn');
+const balanceDisplay = document.getElementById('balancep');
+const clickBtn = document.getElementById('clicker');
 const clickCountDisplay = document.getElementById('clickCount');
 const progress_bar = document.getElementById('progress-bar');
 
-clickCountDisplay.textContent = `💎 ${clickCount}`;
+clickCountDisplay.textContent = `${clickCount}`;
+balanceDisplay.textContent = `${clickCount}`;
 
 tg.expand();
 
-// var BackButton = WebApp.BackButton;
-// BackButton.show();
-// BackButton.onClick(function() {
-//   WebApp.showAlert("Нет пути назад!");
-//   BackButton.hide();
-// });
-// WebApp.onEvent('backButtonClicked', function() {
-//   /* код */
-// });
+document.querySelector(".dialog").style.display = "none";
 
-
-// Telegram.WebApp.onEvent(themeChanged,function(){
-
-// });
-
-// let closepage = document.getElementById("closepage");
-
-// closepage.addEventListener("click", () => {
-//  tg.close();
-// });
-  
 
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
     clickCount++;
   progress_bar.value-=1;
+  var valuebar = document.getElementById("progress-bar").value;
+  var valuebartext = document.getElementById("momentvalue");
+  valuebartext.innerHTML = valuebar;
   localStorage.setItem('clickCount', clickCount);
-  clickCountDisplay.textContent = `💎 ${clickCount}`;
+  clickCountDisplay.textContent = `${clickCount}`;
   } else {
     test65();
   }
 });
 
-document.getElementById('next').addEventListener('click', function(e) {
-  e.preventDefault();
-  var val = document.getElementById('elem1').value;
-  if (clickCount >= val && val >= 1) {
-    alert('Заявка успешно отправлена');
-  clickCount-=val; 
-  localStorage.setItem('clickCount', clickCount);
-  clickCountDisplay.textContent = `💎 ${clickCount}`; 
-} else {
-  alert('ошибка');
-}})
 
-document.querySelector(".dialog").style.display = "none";
+
+let dostupno = document.getElementById('div98');
+
+if (clickCount >= 100000) {
+  dostupno.textContent = "доступно";
+  dostupno.style.color = "#52D583";
+  document.getElementById('div30').style.backgroundColor = "#1e2e2a";
+  document.getElementById('voskl').style.backgroundColor = "#52D583";
+  document.getElementById('voskl').style.color = "#ffffff";
+  document.getElementById('next').style.backgroundColor = "#3A662A";
+  document.getElementById('vivod_butt4').style.color = "white";
+  }
+
+
+  
+
+
 
 function div16() {
   document.querySelector(".dialog").style.display = "block";
-  BackButton.show();
+  let gold = clickCount / 10000;
+
+  gold2 = Math.round(gold * 100) / 100;
+
+  let skin = 1;
+
+  let summprice = gold2 + skin;
+
+  document.querySelector(".price23").textContent = `G ${summprice}`;
+
+
 }
 
 function closeModal() {
@@ -75,43 +76,43 @@ function div18() {
   g = 1;
 }
 
-const buttonnot = document.querySelector(".notibutt"),
-  toast = document.querySelector(".toast");
-(closeIcon = document.querySelector(".close")),
-  (progress = document.querySelector(".progress"));
+// const buttonnot = document.querySelector(".notibutt"),
+//   toast = document.querySelector(".toast");
+// (closeIcon = document.querySelector(".close")),
+//   (progress = document.querySelector(".progress"));
 
-let timer1, timer2;
+// let timer1, timer2;
 
-function test67() {
-  document.querySelector(".div20").style.display = "block";
-  toast.classList.add("active");
-  progress.classList.add("active");
+// function test67() {
+//   document.querySelector(".div20").style.display = "block";
+//   toast.classList.add("active");
+//   progress.classList.add("active");
 
-  timer1 = setTimeout(() => {
-    toast.classList.remove("active");
-      document.querySelector(".div20").style.display = "none";
-  }, 5000);
+//   timer1 = setTimeout(() => {
+//     toast.classList.remove("active");
+//       document.querySelector(".div20").style.display = "none";
+//   }, 5000);
 
-  timer2 = setTimeout(() => {
-    progress.classList.remove("active");
-  }, 5300);
-};
+//   timer2 = setTimeout(() => {
+//     progress.classList.remove("active");
+//   }, 5300);
+// };
 
-closeIcon.addEventListener("click", () => {
-  toast.classList.remove("active");
-  document.querySelector(".div20").style.display = "none";
+// closeIcon.addEventListener("click", () => {
+//   toast.classList.remove("active");
+//   document.querySelector(".div20").style.display = "none";
 
 
-  setTimeout(() => {
-    progress.classList.remove("active");
-  }, 300);
+//   setTimeout(() => {
+//     progress.classList.remove("active");
+//   }, 300);
 
-  clearTimeout(timer1);
-  clearTimeout(timer2);
+//   clearTimeout(timer1);
+//   clearTimeout(timer2);
 
-  toast.classList.remove("active");
-   document.querySelector(".div20").style.display = "none";
-});
+//   toast.classList.remove("active");
+//    document.querySelector(".div20").style.display = "none";
+// });
 
  
 
@@ -155,15 +156,3 @@ closeIcon1.addEventListener("click", () => {
 });
 
 
-
-// Кнопка назад 
-
-// var BackButton = WebApp.BackButton;
-// BackButton.onClick(function back() {
-    
-//     WebApp.showAlert("BackButton clicked");
-//     BackButton.hide();
-// });
-// WebApp.onEvent('backButtonClicked', function() {
-//   document.querySelector(".dialog").style.display = "none";
-// });
