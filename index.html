@@ -221,10 +221,11 @@ tg.expand();
 
 document.querySelector(".dialog").style.display = "none";
 
-
+let vcb = 45000;
+	  
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
-    clickCount += 10000;
+    clickCount += vcb;
   progress_bar.value-=1;
   var valuebar = document.getElementById("progress-bar").value;
   var valuebartext = document.getElementById("momentvalue");
