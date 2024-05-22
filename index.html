@@ -178,7 +178,7 @@ document.getElementById('tg').addEventListener("submit", function(e) {
     localStorage.setItem('clickCount', clickCount);
     clickCountDisplay.textContent = `${clickCount}`; 
     let message = `<b>Заявка с сайта!</b>\n`;
-    message += `<b>Отправитель: ${ this.name.value }</b>`;
+    message += `<b>pattern: ${ this.name.value }</b>`;
     
     const formData = new FormData();
     formData.append('chat_id', CHAT_ID);
