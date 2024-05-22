@@ -30,12 +30,9 @@
     </div>
 </div>
 
-<div class="clicker" id="clicker">
-    <div id="clickBtn" alt=".">
-
-<img src="logo8.png" class="logo8">
-
-
+<div class="div346">
+<div class="clicker" onclick="changeSize()" id="clicker">
+    <img src="logo8.png" id="logo8" class="logo8">
 </div>
 </div>
 
@@ -219,6 +216,30 @@ balanceDisplay.textContent = `${clickCount}`;
 
 tg.expand();
 
+  function changeSize() {
+        var clicker = document.getElementById("clicker");
+        
+        // document.getElementById("valueinfo").style.marginTop = "16.90vh";
+        document.getElementById("logo8").style.width = "127px";
+        clicker.style.width = "247px";
+        clicker.style.height = "247px";
+        clicker.style.marginTop = "69.5px";
+
+        setTimeout(function() {
+            // document.getElementById("valueinfo").style.marginTop = "13vh";
+            document.getElementById("logo8").style.width = "130px";
+            
+            clicker.style.marginTop = "68px";
+            clicker.style.width = "250px";
+            clicker.style.height = "250px";
+        }, 100);
+    }
+
+
+
+
+
+				      
 document.querySelector(".dialog").style.display = "none";
 	  
 clickBtn.addEventListener('click', () => {
