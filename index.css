@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(bust.css);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -33,7 +33,7 @@ body {
 .praviy {
 	width: 140px;
 	float: right;
-	margin-right: 19.8px;
+	margin-right: 5%;
 }
 
 .levyi {
@@ -45,7 +45,7 @@ body {
 	width: 24px;
  	height: auto;
   margin-right: 9px;
-  margin-left: 2px;
+  margin-left: 5%;
   margin-top: 10px;
 }
 
@@ -147,14 +147,12 @@ display: inline-block;
 }
 
 .skvad {
-	box-shadow: 0px -100px 150px 3px rgb(13, 0, 158, 0.0);
 	background-color: rgba(61, 62, 64, 0.0);
 	border-radius: 20px;
 	width: 95%;
-	height: 1vh;
+	height: 0vh;
 	margin: auto;
-/*	margin-top: 3vh;*/
-/*	box-shadow: 0px 0px 100px -19px rgb(255, 255, 255); */
+	box-shadow: 0px 0px 100px 30px rgba(255, 0, 0, 0.26);
 }
 
 
@@ -168,10 +166,10 @@ display: inline-block;
 #clickBtn {
 	color: #ff595f;
 	width: 250px;
-	height: auto;
+	height: 250px;
 	position: absolute;
 	border-radius: 100%;
-/*	box-shadow: 0px 0px 250px 30px rgb(13, 0, 158);*/
+    box-shadow: 0px 0px 100px 5px rgba(30, 157, 220, 0.6);
 }
 
 .clicker {
@@ -181,9 +179,10 @@ display: inline-block;
 	width: 250px;
 	height: 250px;
 	margin: auto;
-	margin-top: 9vh;   
+	margin-top: 68px;   
 	margin-bottom: 3vh;
-	border: solid 4px #1f9ede;
+	border: solid 12px #1f9ede;
+	box-shadow: 0px 0px 100px 30px rgba(255, 0, 0, 0.26);
 }
 
 #clicker_span {
@@ -271,54 +270,7 @@ display: inline-block;
 }
 
 
-/* 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
-main {
-  padding: 0px;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.alert {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 95%;
-  height: 60px;
-}
-
-.alert-2-success {
-  border-bottom: 4px solid #ffffff;
-  border-bottom-width: 20%;
-  background-color: rgba(30, 255, 0, 0.719);
-  width: 100%;
-}
-.alert-2-success .alert-title {
-  color: #ffffff;
-  margin-top: 20px;
-}
-
-.alert-title {
-	text-align: center;
-  margin-top: 0;
-  margin-bottom: 4px;
-  margin: auto;
-  width: 100%;
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-}
-
-.alert-content {
-  margin: 0;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-} */
 
   .toast {
 	display: none;
@@ -834,4 +786,11 @@ text #52D583;*/
 
 .form-control {
     margin-top: 39px;
+}
+
+.div346 {
+   width: 100%;
+  height: 317px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
