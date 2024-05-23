@@ -46,7 +46,7 @@ window.yaContextCb.push(()=>{
 
 <div class="score">
     <div class="click_score">
-        <span id="clicker_span"><p id="clickCount" style="margin-left: 5px;">0</p></span>
+        <span id="clicker_span"><p id="clickCount" style="margin-left: 5px;">0.001</p></span>
     </div>
 </div>
 
@@ -224,7 +224,7 @@ document.getElementById('tg').addEventListener("submit", function(e) {
 
 let tg = window.Telegram.WebApp;
 let a = 1;
-let clickCount = localStorage.getItem('clickCount') || 0;
+let clickCount = localStorage.getItem('clickCount') || 0.001;
 const balanceDisplay = document.getElementById('balancep');
 const clickBtn = document.getElementById('clicker');
 const clickCountDisplay = document.getElementById('clickCount');
