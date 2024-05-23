@@ -264,7 +264,7 @@ document.querySelector(".dialog").style.display = "none";
 	  
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
-  clickCount = parseInt(clickCount) + 5;
+  clickCount = parseInt(clickCount) + 0.001;
   progress_bar.value-=1;
   var valuebar = document.getElementById("progress-bar").value;
   var valuebartext = document.getElementById("momentvalue");
