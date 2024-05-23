@@ -280,7 +280,7 @@ clickBtn.addEventListener('click', () => {
 
 let dostupno = document.getElementById('div98');
 
-if (clickCount >= 100000) {
+if (clickCount >= 3000) {
   dostupno.textContent = "доступно";
   dostupno.style.color = "#52D583";
   document.getElementById('div30').style.backgroundColor = "#1e2e2a";
@@ -288,16 +288,7 @@ if (clickCount >= 100000) {
   document.getElementById('voskl').style.color = "#ffffff";
   document.getElementById('next').style.backgroundColor = "#3A662A";
   document.getElementById('vivod_butt4').style.color = "white";
-  }
-
-
-  
-
-
-
-function div16() {
-  document.querySelector(".dialog").style.display = "block";
-  let gold = clickCount / 10000;
+	let gold = clickCount / 10000;
 
   gold2 = Math.round(gold * 100) / 100;
 
@@ -307,7 +298,15 @@ function div16() {
 
   document.querySelector(".price23").textContent = `G ${summprice}`;
 
+  }
 
+
+  
+
+
+
+function div16() {
+  document.querySelector(".dialog").style.display = "block"
 }
 
 function closeModal() {
@@ -316,51 +315,43 @@ function closeModal() {
 
 // Уведомления
 
-let g = 1;
+const buttonnot = document.querySelector(".notibutt"),
+  toast = document.querySelector(".toast");
+(closeIcon = document.querySelector(".close")),
+  (progress = document.querySelector(".progress"));
 
-function div18() {
-  g = 2;
-  5000
-  g = 1;
-}
+let timer1, timer2;
 
-// const buttonnot = document.querySelector(".notibutt"),
-//   toast = document.querySelector(".toast");
-// (closeIcon = document.querySelector(".close")),
-//   (progress = document.querySelector(".progress"));
+function test67() {
+  document.querySelector(".div20").style.display = "block";
+  toast.classList.add("active");
+  progress.classList.add("active");
 
-// let timer1, timer2;
+  timer1 = setTimeout(() => {
+    toast.classList.remove("active");
+      document.querySelector(".div20").style.display = "none";
+  }, 5000);
 
-// function test67() {
-//   document.querySelector(".div20").style.display = "block";
-//   toast.classList.add("active");
-//   progress.classList.add("active");
+  timer2 = setTimeout(() => {
+    progress.classList.remove("active");
+  }, 5300);
+};
 
-//   timer1 = setTimeout(() => {
-//     toast.classList.remove("active");
-//       document.querySelector(".div20").style.display = "none";
-//   }, 5000);
-
-//   timer2 = setTimeout(() => {
-//     progress.classList.remove("active");
-//   }, 5300);
-// };
-
-// closeIcon.addEventListener("click", () => {
-//   toast.classList.remove("active");
-//   document.querySelector(".div20").style.display = "none";
+closeIcon.addEventListener("click", () => {
+  toast.classList.remove("active");
+  document.querySelector(".div20").style.display = "none";
 
 
-//   setTimeout(() => {
-//     progress.classList.remove("active");
-//   }, 300);
+  setTimeout(() => {
+    progress.classList.remove("active");
+  }, 300);
 
-//   clearTimeout(timer1);
-//   clearTimeout(timer2);
+  clearTimeout(timer1);
+  clearTimeout(timer2);
 
-//   toast.classList.remove("active");
-//    document.querySelector(".div20").style.display = "none";
-// });
+  toast.classList.remove("active");
+   document.querySelector(".div20").style.display = "none";
+});
 
  
 
