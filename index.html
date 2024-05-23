@@ -56,7 +56,7 @@ window.yaContextCb.push(()=>{
 </div>
 </div>
 <!-- <button onclick="ccplus()">Прибавить</button> -->
-
+<button id="increaseButton">Увеличить значение</button>
 <div id="valueinfo" class="valueinfo">
     <p id="momentvalue" class="momentvalue">1500</p>
     <p>/</p>
@@ -264,7 +264,7 @@ document.querySelector(".dialog").style.display = "none";
 	  
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
-  clickCount = clickCount++;
+  clickCount = parseInt(clickCount) + 5;
   progress_bar.value-=1;
   var valuebar = document.getElementById("progress-bar").value;
   var valuebartext = document.getElementById("momentvalue");
