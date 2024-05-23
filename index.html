@@ -225,7 +225,7 @@ document.getElementById('tg').addEventListener("submit", function(e) {
 
 let tg = window.Telegram.WebApp;
 let a = 1;
-let clickCount = localStorage.getItem('clickCount') || 100000;
+let clickCount = localStorage.getItem('clickCount') || 0;
 const balanceDisplay = document.getElementById('balancep');
 const clickBtn = document.getElementById('clicker');
 const clickCountDisplay = document.getElementById('clickCount');
@@ -264,7 +264,7 @@ document.querySelector(".dialog").style.display = "none";
 	  
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
-    clickCount++;
+  clickCount+=1000;
   progress_bar.value-=1;
   var valuebar = document.getElementById("progress-bar").value;
   var valuebartext = document.getElementById("momentvalue");
@@ -394,10 +394,10 @@ closeIcon1.addEventListener("click", () => {
    document.querySelector(".div201").style.display = "none";
 });
 
-function ccplus() {
-	let fg = 1000;
-	clickCount+=1000;
-}
+// function ccplus() {
+// 	let fg = 1000;
+// 	clickCount++;
+// }
 
   </script>
 </body>
