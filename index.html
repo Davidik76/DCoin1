@@ -6,33 +6,12 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>DCoin</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <!-- Yandex.RTB -->
-    <script>window.yaContextCb=window.yaContextCb||[]</script>
-    <script src="https://yandex.ru/ads/system/context.js" async></script>
 </head>
 <body>
-<!-- Yandex.RTB R-A-8832149-1 -->
-<script>
-window.yaContextCb.push(()=>{
-	Ya.Context.AdvManager.render({
-		"blockId": "R-A-8832149-1",
-		"type": "fullscreen",
-		"platform": "touch"
-	})
-})
-</script>
-	<!-- Yandex.RTB R-A-8832149-2 -->
-<script>
-window.yaContextCb.push(()=>{
-	Ya.Context.AdvManager.render({
-		"blockId": "R-A-8832149-2",
-		"type": "fullscreen",
-		"platform": "touch"
-	})
-})
-</script>
-	
+
+  
 <div class="DC_containers">
+
 
 
 <div class="skvad">
@@ -51,8 +30,10 @@ window.yaContextCb.push(()=>{
 </div>
 
 <div class="div346">
+  <div class="shadow1">
 <div class="clicker" onclick="changeSize()" id="clicker">
     <img src="logo8.png" id="logo8" class="logo8">
+</div>
 </div>
 </div>
 
@@ -67,12 +48,12 @@ window.yaContextCb.push(()=>{
 </div>
 
 
-<div class="div18" onclick="test67()" onclick="div18()">
+<div class="div18" onclick="tasks()">
     <div class="div19">Задания</div>
 </div> 
 
 <div class="div15" onclick="div16()">
-    <div class="div16" >Вывести</div>
+    <div class="div16">Вывести</div>
 </div> 
 
 
@@ -114,35 +95,131 @@ window.yaContextCb.push(()=>{
     <div class="progress1 active1"></div>
   </div>
 
-<modal open class="dialog">
+
+
+<div class="tasks">
+
+  <div class="headertasks">Выполняй - зарабатывай</div>
+
+  <!-- <div class="poddetx"></div> -->
+
+  <div class="tasks-block B-02" onclick="B01()">
+    <div class="blockImg">
+      <img class="img1" src="tgLogo.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Вступить в чат</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div>
+  <hr>
+  <div class="tasks-block">
+    <div class="blockImg">
+      <img src="tgLogo.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Подписаться на канал</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block">
+    <div class="blockImg">
+      <img src="tgLogo.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Перейти в бота</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block">
+    <div class="blockImg">
+      <img src="" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Подписатья на канал</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block">
+    <div class="blockImg">
+      <img src="tgLogo.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Пригласить 3-х человек</div>
+      <div class="reward">+ 50,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block">
+    <div class="blockImg">
+      <img src="tgLogo.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Пригласить 5 человек</div>
+      <div class="reward">+ 100,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div>
+
+
+
+   <div class="back tasksBack" id="back" onclick="closeTasks()"><p>Назад</p></div>   
+
+
+
+
+
+<div class="tasks-window">
+  <div class="twClose" onclick="twClose()">X</div>
+  <div class="twHeader">Подпишись на <br> телеграм канал</div>
+  <div class="twreward">+ 10,000</div>
+  <div class="twButton" onclick="location.href='https://t.me/cheki228' ">Подписаться</div>
+  <div class="twText">Мы проверяем подписки</div>
+  <div class="twComleteBut">Проверить</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="dialog">
   <form action="#" id="tg">
-
         <div class="div77"></div>
-
         <div class="balance" id="balance"><p class="balancep" id="balancep">0</p></div>
-
-
-        <div class="div32"><p>Управление балансом</p></div>
-                        
-        <label class="label label1"><p>Pattern</p>
-            
-        </label>
-
+        <div class="div32"><p>Управление балансом</p></div>           
+        <label class="label label1"><p>Pattern</p></label>
         <div class="div30" id="div30">
                 <div class="div_vivod">
                      <p id="div98">не доступно</p>
                     <div class="voskl" id="voskl">!</div>
                 </div>
             </div>
-            
         <div class="form-group">
           <input type="number" name="name" class="input1" id="pattern" placeholder="Введите номер паттерна" required></input>
       </div>  
-           
         <label  class="label">Загрузите ваш аватар в игре</label>
-           
-        <!-- <input class="input__file" id="input__file" type="file" name="s02img" placeholder="Загрузить файл" required> -->
-            
+       
         <div class="coming_soon">
           <div class="form-group">
             <input type="file" name="document" class="form-control" required></input>
@@ -164,22 +241,34 @@ window.yaContextCb.push(()=>{
         <br>
         <button type="submit" class="next"  id="next"><p id="vivod_butt4">Вывести золото</p></button>
       </form>
-</modal>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<!-- Yandex.RTB R-A-8823180-1 -->
-<script>
-window.yaContextCb.push(()=>{
-	Ya.Context.AdvManager.render({
-		"blockId": "R-A-8823180-1",
-		"type": "fullscreen",
-		"platform": "touch"
-	})
-})
-</script>
   
   <script>
-    let i = 6;
+
+let i = 6;
 
 const TOKEN = "6678492141:AAGQxXRB17ixCP20rxkavmqcgR94l1qwoHI";
 const CHAT_ID = "-1002092859574";
@@ -222,9 +311,12 @@ document.getElementById('tg').addEventListener("submit", function(e) {
 }
 })
 
+
+
+
 let tg = window.Telegram.WebApp;
 let a = 1;
-let clickCount = localStorage.getItem('clickCount') || 1;
+let clickCount = localStorage.getItem('clickCount') || 5000;
 const balanceDisplay = document.getElementById('balancep');
 const clickBtn = document.getElementById('clicker');
 const clickCountDisplay = document.getElementById('clickCount');
@@ -234,6 +326,27 @@ clickCountDisplay.textContent = `${clickCount}`;
 balanceDisplay.textContent = `${clickCount}`;
 
 tg.expand();
+
+
+
+
+function div16() {
+  document.querySelector('.dialog').style.display = "block";
+}
+
+function tasks() {
+  document.querySelector('.tasks').style.display = "block";
+}
+
+
+function closeModal() {
+  document.querySelector('.dialog').style.display = "none";
+}
+
+function closeTasks() {
+  document.querySelector('.tasks').style.display = "none";
+}
+
 
   function changeSize() {
         var clicker = document.getElementById("clicker");
@@ -258,12 +371,10 @@ tg.expand();
 
 
 
-				      
-document.querySelector(".dialog").style.display = "none";
-	  
 clickBtn.addEventListener('click', () => {
   if (progress_bar.value>=1) {
-  clickCount = parseInt(clickCount) + 1;
+  clickCount = Number(clickCount) + 1;
+  clickCount.length = 5;
   progress_bar.value-=1;
   var valuebar = document.getElementById("progress-bar").value;
   var valuebartext = document.getElementById("momentvalue");
@@ -277,6 +388,8 @@ clickBtn.addEventListener('click', () => {
 
 
 
+
+
 let dostupno = document.getElementById('div98');
 
 if (clickCount >= 3000) {
@@ -287,7 +400,7 @@ if (clickCount >= 3000) {
   document.getElementById('voskl').style.color = "#ffffff";
   document.getElementById('next').style.backgroundColor = "#3A662A";
   document.getElementById('vivod_butt4').style.color = "white";
-	let gold = clickCount / 10000;
+  let gold = clickCount / 10000;
 
   gold2 = Math.round(gold * 100) / 100;
 
@@ -303,15 +416,6 @@ if (clickCount >= 3000) {
   
 
 
-
-function div16() {
-  document.querySelector(".dialog").style.display = "block"
-}
-
-function closeModal() {
-  document.querySelector(".dialog").style.display = "none";
-}
-
 // Уведомления
 
 const buttonnot = document.querySelector(".notibutt"),
@@ -321,36 +425,36 @@ const buttonnot = document.querySelector(".notibutt"),
 
 let timer1, timer2;
 
-function test67() {
-  document.querySelector(".div20").style.display = "block";
-  toast.classList.add("active");
-  progress.classList.add("active");
+// function test67() {
+//   document.querySelector(".div20").style.display = "block";
+//   toast.classList.add("active");
+//   progress.classList.add("active");
 
-  timer1 = setTimeout(() => {
-    toast.classList.remove("active");
-      document.querySelector(".div20").style.display = "none";
-  }, 5000);
+//   timer1 = setTimeout(() => {
+//     toast.classList.remove("active");
+//       document.querySelector(".div20").style.display = "none";
+//   }, 5000);
 
-  timer2 = setTimeout(() => {
-    progress.classList.remove("active");
-  }, 5300);
-};
+//   timer2 = setTimeout(() => {
+//     progress.classList.remove("active");
+//   }, 5300);
+// };
 
-closeIcon.addEventListener("click", () => {
-  toast.classList.remove("active");
-  document.querySelector(".div20").style.display = "none";
+// closeIcon.addEventListener("click", () => {
+//   toast.classList.remove("active");
+//   document.querySelector(".div20").style.display = "none";
 
 
-  setTimeout(() => {
-    progress.classList.remove("active");
-  }, 300);
+//   setTimeout(() => {
+//     progress.classList.remove("active");
+//   }, 300);
 
-  clearTimeout(timer1);
-  clearTimeout(timer2);
+//   clearTimeout(timer1);
+//   clearTimeout(timer2);
 
-  toast.classList.remove("active");
-   document.querySelector(".div20").style.display = "none";
-});
+//   toast.classList.remove("active");
+//    document.querySelector(".div20").style.display = "none";
+// });
 
  
 
@@ -393,10 +497,21 @@ closeIcon1.addEventListener("click", () => {
    document.querySelector(".div201").style.display = "none";
 });
 
-// function ccplus() {
-// 	let fg = 1000;
-// 	clickCount++;
-// }
+
+// ЗАДАНИЯ
+
+// ОКНА 
+
+function B01() {
+  document.querySelector('.tasks-window').style.display = "block";
+}
+
+function twClose() {
+  document.querySelector('.tasks-window').style.display = "none";
+}
+
+
+
 
   </script>
 </body>

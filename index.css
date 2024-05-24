@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(bust.css);
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
@@ -17,7 +17,7 @@ background-color: #1d1e21;
 	padding: 0px;
 	box-sizing: border-box;
 	font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+
   font-style: normal;
 }
 
@@ -152,9 +152,8 @@ display: inline-block;
 	width: 95%;
 	height: 0vh;
 	margin: auto;
-	box-shadow: 0px 0px 100px 30px rgba(255, 0, 0, 0.26);
+	box-shadow: 0px 0px 50px 5px black;
 }
-
 
 .skvad_name, p {
 	color: white;
@@ -181,9 +180,10 @@ display: inline-block;
 	margin: auto;
 	margin-top: 68px;   
 	margin-bottom: 3vh;
+	box-shadow: 0px 0px 50px 5px #01486a;
 	border: solid 12px #1f9ede;
-	box-shadow: 0px 0px 100px 30px rgba(255, 0, 0, 0.26);
 }
+
 
 #clicker_span {
 	color: white;
@@ -241,14 +241,14 @@ display: inline-block;
 }
 
 .dialog {
-	position: absolute;
-	display: block;
-    top: 0px;
-    bottom: 0px;
-    margin-top: 0px;
-    left: 0px;
-	width: 100%;
 	height: 100vh;
+	position: absolute;
+	display: none;
+  top: 0px;
+  bottom: 0px;
+  margin-top: 0px;
+  left: 0px;
+	width: 100%;
 	background-color: #1d1e21;
 }
 
@@ -633,10 +633,6 @@ display: inline-block;
 
 }
 
-.dialog {
-	height: 200vh;
-
-}
 
 .back {
 	background-color: #33353B;
@@ -793,4 +789,202 @@ text #52D583;*/
   height: 317px;
   margin-top: 10px;
   padding-top: 10px;
+}
+
+
+/*ЗАДАНИЯ*/
+
+.tasks {
+	height: 100vh;
+	position: absolute;
+	display: none;
+  top: 0px;
+  bottom: 0px;
+  margin-top: 0px;
+  left: 0px;
+	width: 100%;
+	background-color: #1d1e21;
+}
+
+.tasks-block {
+	display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.blockImg {
+	width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.tasks-block img {
+	width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.block-center {
+  margin-top: 24px;
+  height: 70px;
+  width: 66%;
+  display: inline-block;
+}
+
+.tasksName {
+	display: inline-block;
+  width: 100%;
+  height: 10px;
+  font-size: 17px;
+  color: white;
+}
+
+.taskButComlete {
+	display: none;
+}
+
+.reward {
+	color: #b8f5b3;
+  margin-top: 8px;
+}
+
+.B-01 {
+	color: white;
+	float: right;
+	margin-top: -1px;
+}
+
+.headertasks {
+	margin: auto;
+	color: white;
+	font-size: 27px;
+	width: 328px;
+	margin-top: 45px;
+}
+
+.B-02 {
+	margin-top: 50px;
+}
+
+.tasksBack {
+	background-color: #33353B;
+  width: 30%;
+  height: 52px;
+  color: white;
+  border-radius: 10px;
+  top: 90vh;
+  left: 5.2%;
+  position: absolute;
+  z-index: 1000;
+}
+
+.tasksBack p {
+font-size: 17px;
+  margin-top: 16px;
+  text-align: v;
+  text-align: center;
+  margin-left: 28%;
+}
+
+.img1 {
+	width: 20px;
+	height: 20px;
+}
+
+hr {
+	width: 90%;
+	height: 1px;
+	margin-top: 10px;
+}
+
+
+/*ОКНА ДЛЯ ЗАДАНИЯ */
+
+.tasks-window {
+	display: none;
+	height: 300px;
+	position: absolute;
+	display: none;
+  bottom: 0%;
+  left: 0px;
+	width: 100%;
+	background-color: #1d1e21;
+	border-radius: 20px;
+	border-top: 4px #1f9ede solid;
+	z-index: 1001;
+}
+
+.twClose {
+	background-color: #1f9ede;
+	border-radius: 100%;
+	float: right;
+	width: auto;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: block;
+	margin-right: 17px;
+	margin-top: 16px;
+	font-size: 20px;
+	color: white;
+}
+
+.twHeader {
+	color: white;
+	margin: auto;
+	width: 238px;
+	margin-top: 15px;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.twreward {
+	color: white;
+	width: 110px;
+	margin: auto;
+	font-size: 24px;
+	margin-top: 15px;
+}
+
+.twButton {
+	color: white;
+	background-color: #1f9ede;
+	border-radius: 10px;
+	height: 24px;
+	width: 127px;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.twComleteBut {
+	color: white;
+	background-color: #1f9ede;
+	border-radius: 10px;
+	height: 24px;
+	width: 108px;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.twText {
+	margin: auto;
+	margin-top: 15px;
+	color: #ffffff6b;
+	width: 191px;
 }
