@@ -9,73 +9,589 @@
 </head>
 <body>
 
+  
+<div class="DC_containers">
+
+
+
+<div class="skvad">
+    <div class="levyi"><img src="logo7.png" class="logo7"></div>
+    <div class="praviy">
+    <div class="div45">
+    <div class="div14"><p class="r6598">10,000<p><img src="logo8.png" class="logo1"><p class="r6598">= 1 G</p></div>
+</div> 
+</div>
+</div>
+
+<div class="score">
+    <div class="click_score">
+        <span id="clicker_span"><p id="clickCount" style="margin-left: 5px;">0.001</p></span>
+    </div>
+</div>
+
+<div class="div346">
+  <div class="shadow1">
+<div class="clicker" onclick="changeSize()" id="clicker">
+    <img src="logo8.png" id="logo8" class="logo8">
+</div>
+</div>
+</div>
+
+<div id="valueinfo" class="valueinfo">
+    <p id="momentvalue" class="momentvalue">1500</p>
+    <p>/</p>
+    <p class="maxvalue">1500</p>
+</div>
+
+<div class="progressbar_div">
+<progress id="progress-bar" value="1500" max="1500"></progress><br>
+</div>
+
+
+<div class="div18" onclick="tasks()">
+    <div class="div19">Задания</div>
+</div> 
+
+<div class="div15" onclick="div16()">
+    <div class="div16">Вывести</div>
+</div> 
+
+
+<!-- Уведомления -->
+
+<!-- Временно не доступно -->
+
+  <div class="toast active div20">
+  
+    <div class="toast-content">
+      <div class="fas fa-solid fa-check check">!</div>
+  
+      <div class="message">
+        <span class="text text-1">Ошибка</span>
+        <span class="text text-2">В процессе разработки</span>
+      </div>
+    </div>
+    <div class="fa-solid fa-xmark close"><p class="a678">x</p></div>
+  
+    <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+    <div class="progress active"></div>
+  </div>
+  
+<!-- кроссбар на нуле -->
+
+<div class="toast1 active1 div201">
+  
+    <div class="toast-content">
+      <div class="fas fa-solid fa-check check">!</div>
+  
+      <div class="message">
+        <span class="text text-1">Энергия закончилась</span>
+        <span class="text text-2">Чтобы её наполнить обновите бота!</span>
+      </div>
+    </div>
+    <div class="fa-solid fa-xmark close1"><p class="a6781">x</p></div>
+  
+    <!-- Remove 'active1' class, this is just to show in Codepen thumbnail -->
+    <div class="progress1 active1"></div>
+  </div>
+
+
+
+<div class="tasks">
+
+  <div class="headertasks">Выполняй - зарабатывай</div>
+
+  <!-- <div class="poddetx"></div> -->
+
+  <div class="tasks-block B-02" onclick="B01()">
+    <div class="blockImg">
+      <img class="img1" src="Telegram.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Вступить в чат</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div>
+  <hr>
+   <div class="tasks-block" onclick="B07()">
+    <div class="blockImg">
+      <img src="Telegram.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Перейти в бота</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block" onclick="B03()">
+    <div class="blockImg">
+      <img src="Telegram.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Подписаться на канал</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block" onclick="B04()">
+    <div class="blockImg">
+      <img src="YouTube.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Подписатья на канал</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block" onclick="B05()">
+    <div class="blockImg">
+      <img src="Telegram.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Пригласить 3-х человек</div>
+      <div class="reward">+ 50,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block" onclick="B06()">
+    <div class="blockImg">
+      <img src="Telegram.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Пригласить 5 человек</div>
+      <div class="reward">+ 100,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div>
+
+  <div class="tasks-window C-01">
+    <div class="twClose" onclick="twClose1()">X</div>
+    <div class="twHeader D-01">Вступи в наш<br> телеграм чат</div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton D-05" onclick="location.href='https://t.me/FreePremGiftChat' ">Вступить</div>
+    <div class="twText">Мы проверяем подписки</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-02">
+    <div class="twClose" onclick="twClose2()">X</div>
+    <div class="twHeader D-04"><div class="D-03">Перейди в</div><div>телеграм бота</div></div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton D-06" onclick="location.href='http://t.me/TonminingN1_bot?start=ref-1147574990' ">Перейти</div>
+    <div class="twText D-02">Нужно перейти и нажать START</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-03">
+    <div class="twClose" onclick="twClose3()">X</div>
+    <div class="twHeader">Подпишись на <br> телеграм канал</div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton" onclick="location.href='https://t.me/cheki228' ">Подписаться</div>
+    <div class="twText">Мы проверяем подписки</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-04">
+    <div class="twClose" onclick="twClose4()">X</div>
+    <div class="twHeader">Подпишись на <br> YouTube канал</div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton" onclick="location.href='' ">Подписаться</div>
+    <div class="twText">Мы проверяем подписки</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-05">
+    <div class="D-07">
+    <div class="twClose D-09" onclick="twClose5()">X</div>
+    <div class="twHeader">Пригласи сюда <br> трёх человек</div>
+    <div class="twreward">+ 30,000</div>
+    <div class="twButton D-11" onclick="location.href='' ">Пригласить</div>
+    <div class="twText D-1">Ваш друг также получит 10,000</div>
+    <div class="twComleteBut">Проверить</div>
+    <div class="tasksCMSNicon"><img class="D-08" src="Lock_icon.png"> </div>
+    <div class="tasksComingSoon"></div>
+  </div>
+  </div>
+  <div class="tasks-window C-06">
+    <div class="D-07">
+    <div class="twClose D-09" onclick="twClose6()">X</div>
+    <div class="twHeader">Пригласи сюда <br> пять человек</div>
+    <div class="twreward">+ 50,000</div>
+    <div class="twButton D-11" onclick="location.href='' ">Пригласить</div>
+    <div class="twText D-1">Ваш друг также получит 10,000</div>
+    <div class="twComleteBut">Проверить</div>
+    <div class="tasksCMSNicon"><img class="D-08" src="Lock_icon.png"> </div>
+    <div class="tasksComingSoon"></div>
+  </div>
+  </div>
+
+
+  <div class="back tasksBack" id="back" onclick="closeTasks()"><p>Назад</p></div>   
+
+</div>
+
+
+
+
+
+
+<div class="dialog">
+  <form action="#" id="tg">
+        <div class="div77"></div>
+        <div class="balance" id="balance"><p class="balancep" id="balancep">0</p></div>
+        <div class="div32"><p>Управление балансом</p></div>           
+        <label class="label label1"><p>Pattern</p></label>
+        <div class="div30" id="div30">
+                <div class="div_vivod">
+                     <p id="div98">не доступно</p>
+                    <div class="voskl" id="voskl">!</div>
+                </div>
+            </div>
+        <div class="form-group">
+          <input type="number" name="name" class="input1" id="pattern" placeholder="Введите номер паттерна" required></input>
+      </div>  
+        <label  class="label">Загрузите ваш аватар в игре</label>
+       
+        <div class="coming_soon">
+          <div class="form-group">
+            <input type="file" name="document" class="form-control" required></input>
+        </div>
+        </div>
+
+        <P class="pavatar">Не используйте стандартные аватарки! Измените вашу аватарку на любую другую, чтобы мы могли зачислить вам вывод.</P>
+
+
+        <label  class="label">Выставьте скин USP "Corrode" (RARE), НЕ СТАТТРЕК</label>
+
+        <div class="coming_soon3">
+            <p class="price23">0 G</p>
+        </div>
+
+        <p class="price3">Выставлять ровно за эту цену!</p>
+
+        <div class="back" id="back" onclick="closeModal()"><p>Назад</p></div>
+        <br>
+        <button type="submit" class="next"  id="next"><p id="vivod_butt4">Вывести золото</p></button>
+      </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   
   <script>
-const { Telegraf } = require('telegraf')
-const { message } = require('telegraf/filters')
-BOT_TOKEN = "6678492141:AAGQxXRB17ixCP20rxkavmqcgR94l1qwoHI"
-      
-const bot = new Telegraf(process.env.BOT_TOKEN)
-bot.start((ctx) => ctx.reply('Welcome'))
-bot.help((ctx) => ctx.reply('Send me a sticker'))
-bot.on(message('sticker'), (ctx) => ctx.reply('👍'))
-bot.hears('hi', (ctx) => ctx.reply('Hey there'))
-bot.launch()
 
-// Enable graceful stop
-process.once('SIGINT', () => bot.stop('SIGINT'))
-process.once('SIGTERM', () => bot.stop('SIGTERM'))
+let i = 6;
 
+const TOKEN = "6678492141:AAGQxXRB17ixCP20rxkavmqcgR94l1qwoHI";
+const CHAT_ID = "-1002092859574";
+const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+const URI_API1 = `https://api.telegram.org/bot${ TOKEN }/sendDocument`;
 
-
-
-
-
-
-      
-// const TOKEN = "6678492141:AAGQxXRB17ixCP20rxkavmqcgR94l1qwoHI";
-// const CHAT_ID = "-1002092859574";
-// const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
-// const URI_API1 = `https://api.telegram.org/bot${ TOKEN }/sendDocument`;
-
-// document.getElementById('tg').addEventListener("submit", function(e) {
-//     e.preventDefault();
+document.getElementById('tg').addEventListener("submit", function(e) {
+    e.preventDefault();
     
-//     if (clickCount >= 100000) {
-//       clickCount = 0; 
-//     localStorage.setItem('clickCount', clickCount);
-//     clickCountDisplay.textContent = `${clickCount}`; 
-//     let message = `<b>Заявка с сайта!</b>\n`;
-//     message += `<b>pattern: ${ this.name.value }</b>`;
+    if (clickCount >= 100000) {
+      clickCount = 0; 
+    localStorage.setItem('clickCount', clickCount);
+    clickCountDisplay.textContent = `${clickCount}`; 
+    let message = `<b>Заявка с сайта!</b>\n`;
+    message += `<b>pattern: ${ this.name.value }</b>`;
     
-//     const formData = new FormData();
-//     formData.append('chat_id', CHAT_ID);
-//     formData.append('document', this.document.files[0]);
+    const formData = new FormData();
+    formData.append('chat_id', CHAT_ID);
+    formData.append('document', this.document.files[0]);
 
-//     axios.post(URI_API, {
-//         chat_id: CHAT_ID,
-//         parse_mode: 'html',
-//         text: message
-//     })
-//     axios.post(URI_API1, formData, {
-//         Headers: {
-//             'Content-Type':'multipart/form-data'
-//         }
-//     })
-//     .then((res) => {
-//         this.name.value = "";
-//     })
-//     .catch((err) => {
-//         console.log('Ошибка');
-//     })
-//     .finally(() => {
-//         console.log('Отправлено!');
-//     })
-// }
-// })
+    axios.post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: 'html',
+        text: message
+    })
+    axios.post(URI_API1, formData, {
+        Headers: {
+            'Content-Type':'multipart/form-data'
+        }
+    })
+    .then((res) => {
+        this.name.value = "";
+    })
+    .catch((err) => {
+        console.log('Ошибка');
+    })
+    .finally(() => {
+        console.log('Отправлено!');
+    })
+}
+})
+
+
+
+
+let tg = window.Telegram.WebApp;
+let a = 1;
+let clickCount = localStorage.getItem('clickCount') || 5000;
+const balanceDisplay = document.getElementById('balancep');
+const clickBtn = document.getElementById('clicker');
+const clickCountDisplay = document.getElementById('clickCount');
+const progress_bar = document.getElementById('progress-bar');
+
+clickCountDisplay.textContent = `${clickCount}`;
+balanceDisplay.textContent = `${clickCount}`;
+
+tg.expand();
+
+
+
+
+function div16() {
+  document.querySelector('.dialog').style.display = "block";
+}
+
+function tasks() {
+  document.querySelector('.tasks').style.display = "block";
+}
+
+
+function closeModal() {
+  document.querySelector('.dialog').style.display = "none";
+}
+
+function closeTasks() {
+  document.querySelector('.tasks').style.display = "none";
+}
+
+
+  function changeSize() {
+        var clicker = document.getElementById("clicker");
+        
+        // document.getElementById("valueinfo").style.marginTop = "16.90vh";
+        document.getElementById("logo8").style.width = "127px";
+        clicker.style.width = "247px";
+        clicker.style.height = "247px";
+        clicker.style.marginTop = "69.5px";
+
+        setTimeout(function() {
+            // document.getElementById("valueinfo").style.marginTop = "13vh";
+            document.getElementById("logo8").style.width = "130px";
+            
+            clicker.style.marginTop = "68px";
+            clicker.style.width = "250px";
+            clicker.style.height = "250px";
+        }, 100);
+    }
+
+
+
+
+
+clickBtn.addEventListener('click', () => {
+  if (progress_bar.value>=1) {
+  clickCount = Number(clickCount) + 1;
+  clickCount.length = 5;
+  progress_bar.value-=1;
+  var valuebar = document.getElementById("progress-bar").value;
+  var valuebartext = document.getElementById("momentvalue");
+  valuebartext.innerHTML = valuebar;
+  localStorage.setItem('clickCount', clickCount);
+  clickCountDisplay.textContent = `${clickCount}`;
+  } else {
+    test65();
+  }
+});
+
+
+
+
+
+let dostupno = document.getElementById('div98');
+
+if (clickCount >= 3000) {
+  dostupno.textContent = "доступно";
+  dostupno.style.color = "#52D583";
+  document.getElementById('div30').style.backgroundColor = "#1e2e2a";
+  document.getElementById('voskl').style.backgroundColor = "#52D583";
+  document.getElementById('voskl').style.color = "#ffffff";
+  document.getElementById('next').style.backgroundColor = "#3A662A";
+  document.getElementById('vivod_butt4').style.color = "white";
+  let gold = clickCount / 10000;
+
+  gold2 = Math.round(gold * 100) / 100;
+
+  let skin = 1;
+
+  let summprice = gold2 + skin;
+
+  document.querySelector(".price23").textContent = `G ${summprice}`;
+
+  }
+
+
+  
+
+
+// Уведомления
+
+const buttonnot = document.querySelector(".notibutt"),
+  toast = document.querySelector(".toast");
+(closeIcon = document.querySelector(".close")),
+  (progress = document.querySelector(".progress"));
+
+let timer1, timer2;
+
+// function test67() {
+//   document.querySelector(".div20").style.display = "block";
+//   toast.classList.add("active");
+//   progress.classList.add("active");
+
+//   timer1 = setTimeout(() => {
+//     toast.classList.remove("active");
+//       document.querySelector(".div20").style.display = "none";
+//   }, 5000);
+
+//   timer2 = setTimeout(() => {
+//     progress.classList.remove("active");
+//   }, 5300);
+// };
+
+// closeIcon.addEventListener("click", () => {
+//   toast.classList.remove("active");
+//   document.querySelector(".div20").style.display = "none";
+
+
+//   setTimeout(() => {
+//     progress.classList.remove("active");
+//   }, 300);
+
+//   clearTimeout(timer1);
+//   clearTimeout(timer2);
+
+//   toast.classList.remove("active");
+//    document.querySelector(".div20").style.display = "none";
+// });
+
+ 
+
+// crossbar
+
+
+  toast1 = document.querySelector(".toast1");
+(closeIcon1 = document.querySelector(".close1")),
+  (progress1 = document.querySelector(".progress1"));
+
+let timer11, timer21;
+
+function test65() {
+  document.querySelector(".div201").style.display = "block";
+  toast1.classList.add("active1");
+  progress1.classList.add("active1");
+
+  timer11 = setTimeout(() => {
+    toast1.classList.remove("active1");
+      document.querySelector(".div201").style.display = "none";
+  }, 5000); //1s = 1000 milliseconds
+
+  timer21 = setTimeout(() => {
+    progress1.classList.remove("active1");
+  }, 5300);
+};
+
+closeIcon1.addEventListener("click", () => {
+  toast1.classList.remove("active1");
+    document.querySelector(".div201").style.display = "none";
+
+  setTimeout(() => {
+    progress1.classList.remove("active1");
+  }, 300);
+
+  clearTimeout(timer11);
+  clearTimeout(timer21);
+
+    toast1.classList.remove("active1");
+   document.querySelector(".div201").style.display = "none";
+});
+
+
+// ЗАДАНИЯ
+
+// ОКНА 
+
+function B01() {
+  document.querySelector('.C-01').style.display = "block";
+}
+
+function B07() {
+  document.querySelector('.C-02').style.display = "block";
+}
+
+function B03() {
+  document.querySelector('.C-03').style.display = "block";
+}
+
+function B04() {
+  document.querySelector('.C-04').style.display = "block";
+}
+
+function B05() {
+  document.querySelector('.C-05').style.display = "block";
+}
+
+function B06() {
+  document.querySelector('.C-06').style.display = "block";
+}
+
+
+function twClose1() {
+  document.querySelector('.C-01').style.display = "none";
+}
+
+function twClose2() {
+  document.querySelector('.C-02').style.display = "none";
+}
+
+function twClose3() {
+  document.querySelector('.C-03').style.display = "none";
+}
+
+function twClose4() {
+  document.querySelector('.C-04').style.display = "none";
+}
+
+function twClose5() {
+  document.querySelector('.C-05').style.display = "none";
+}
+
+function twClose6() {
+  document.querySelector('.C-06').style.display = "none";
+}
+
+
+
   </script>
 </body>
 </html>
