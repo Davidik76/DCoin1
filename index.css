@@ -797,7 +797,7 @@ text #52D583;*/
 .tasks {
 	height: 100vh;
 	position: absolute;
-	display: none;
+	display: block;
   top: 0px;
   bottom: 0px;
   margin-top: 0px;
@@ -868,11 +868,11 @@ text #52D583;*/
 	color: white;
 	font-size: 27px;
 	width: 328px;
-	margin-top: 45px;
+	margin-top: 35px;
 }
 
 .B-02 {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .tasksBack {
@@ -901,7 +901,7 @@ font-size: 17px;
 }
 
 hr {
-	width: 90%;
+	width: 85%;
 	height: 1px;
 	margin-top: 10px;
 }
@@ -913,7 +913,6 @@ hr {
 	display: none;
 	height: 300px;
 	position: absolute;
-	display: none;
   bottom: 0%;
   left: 0px;
 	width: 100%;
@@ -921,6 +920,7 @@ hr {
 	border-radius: 20px;
 	border-top: 4px #1f9ede solid;
 	z-index: 1001;
+	box-shadow: 0px 0px 50px 5px #01486a;
 }
 
 .twClose {
@@ -987,4 +987,77 @@ hr {
 	margin-top: 15px;
 	color: #ffffff6b;
 	width: 191px;
+}
+
+.D-01 {
+	width: 193px;
+}
+
+.D-02 {
+	width: 239px;
+}
+
+.D-03 {
+		margin: auto;
+		margin-bottom: 0;
+		width: 154px;
+}
+
+.D-04 {
+	width: 212px;
+}
+
+.D-05 {
+	width: 96px;
+	padding-left: 18px;
+}
+
+.D-06 {
+	padding-left: 24px;
+	width: 96px;
+}
+
+.tasksComingSoon {
+	height: 310px;
+  position: absolute;
+  bottom: -31px;
+  left: 0;
+  width: 100%;
+  border-top: 15px;
+  border-radius: 20px;
+  background-color: #040404d6;
+}
+
+.D-07 {
+	position: relative;
+}
+
+.tasksCMSNicon {
+	color: white;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%); 
+	position: absolute;
+	z-index: 1003;
+}
+
+.D-08 {
+	width: 100px;
+}
+
+.D-09 {
+	z-index: 1004;
+  position: absolute;
+  float: left;
+right: 0px;
+  width: auto;
+  top: -16px;
+}
+
+.D-1 {
+	width: 237px;
+}
+
+.D-11 {
+	width: 114px;
 }

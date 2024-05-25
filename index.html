@@ -105,7 +105,7 @@
 
   <div class="tasks-block B-02" onclick="B01()">
     <div class="blockImg">
-      <img class="img1" src="tgLogo.png" alt="">
+      <img class="img1" src="Telegram.png" alt="">
     </div>
     <div class="block-center">
       <div class="tasksName">Вступить в чат</div>
@@ -115,21 +115,9 @@
     <div class="taskComlete"></div>
   </div>
   <hr>
-  <div class="tasks-block">
+   <div class="tasks-block" onclick="B07()">
     <div class="blockImg">
-      <img src="tgLogo.png" alt="">
-    </div>
-    <div class="block-center">
-      <div class="tasksName">Подписаться на канал</div>
-      <div class="reward">+ 10,000</div>
-    </div>
-    <div class="B-01">></div>
-    <div class="taskComlete"></div>
-  </div> 
-  <hr>
-  <div class="tasks-block">
-    <div class="blockImg">
-      <img src="tgLogo.png" alt="">
+      <img src="Telegram.png" alt="">
     </div>
     <div class="block-center">
       <div class="tasksName">Перейти в бота</div>
@@ -139,9 +127,21 @@
     <div class="taskComlete"></div>
   </div> 
   <hr>
-  <div class="tasks-block">
+  <div class="tasks-block" onclick="B03()">
     <div class="blockImg">
-      <img src="" alt="">
+      <img src="Telegram.png" alt="">
+    </div>
+    <div class="block-center">
+      <div class="tasksName">Подписаться на канал</div>
+      <div class="reward">+ 10,000</div>
+    </div>
+    <div class="B-01">></div>
+    <div class="taskComlete"></div>
+  </div> 
+  <hr>
+  <div class="tasks-block" onclick="B04()">
+    <div class="blockImg">
+      <img src="YouTube.png" alt="">
     </div>
     <div class="block-center">
       <div class="tasksName">Подписатья на канал</div>
@@ -151,9 +151,9 @@
     <div class="taskComlete"></div>
   </div> 
   <hr>
-  <div class="tasks-block">
+  <div class="tasks-block" onclick="B05()">
     <div class="blockImg">
-      <img src="tgLogo.png" alt="">
+      <img src="Telegram.png" alt="">
     </div>
     <div class="block-center">
       <div class="tasksName">Пригласить 3-х человек</div>
@@ -163,9 +163,9 @@
     <div class="taskComlete"></div>
   </div> 
   <hr>
-  <div class="tasks-block">
+  <div class="tasks-block" onclick="B06()">
     <div class="blockImg">
-      <img src="tgLogo.png" alt="">
+      <img src="Telegram.png" alt="">
     </div>
     <div class="block-center">
       <div class="tasksName">Пригласить 5 человек</div>
@@ -175,26 +175,65 @@
     <div class="taskComlete"></div>
   </div>
 
+  <div class="tasks-window C-01">
+    <div class="twClose" onclick="twClose1()">X</div>
+    <div class="twHeader D-01">Вступи в наш<br> телеграм чат</div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton D-05" onclick="location.href='https://t.me/FreePremGiftChat' ">Вступить</div>
+    <div class="twText">Мы проверяем подписки</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-02">
+    <div class="twClose" onclick="twClose2()">X</div>
+    <div class="twHeader D-04"><div class="D-03">Перейди в</div><div>телеграм бота</div></div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton D-06" onclick="location.href='http://t.me/TonminingN1_bot?start=ref-1147574990' ">Перейти</div>
+    <div class="twText D-02">Нужно перейти и нажать START</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-03">
+    <div class="twClose" onclick="twClose3()">X</div>
+    <div class="twHeader">Подпишись на <br> телеграм канал</div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton" onclick="location.href='https://t.me/cheki228' ">Подписаться</div>
+    <div class="twText">Мы проверяем подписки</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-04">
+    <div class="twClose" onclick="twClose4()">X</div>
+    <div class="twHeader">Подпишись на <br> YouTube канал</div>
+    <div class="twreward">+ 10,000</div>
+    <div class="twButton" onclick="location.href='' ">Подписаться</div>
+    <div class="twText">Мы проверяем подписки</div>
+    <div class="twComleteBut">Проверить</div>
+  </div>
+  <div class="tasks-window C-05">
+    <div class="D-07">
+    <div class="twClose D-09" onclick="twClose5()">X</div>
+    <div class="twHeader">Пригласи сюда <br> трёх человек</div>
+    <div class="twreward">+ 30,000</div>
+    <div class="twButton D-11" onclick="location.href='' ">Пригласить</div>
+    <div class="twText D-1">Ваш друг также получит 10,000</div>
+    <div class="twComleteBut">Проверить</div>
+    <div class="tasksCMSNicon"><img class="D-08" src="Lock_icon.png"> </div>
+    <div class="tasksComingSoon"></div>
+  </div>
+  </div>
+  <div class="tasks-window C-06">
+    <div class="D-07">
+    <div class="twClose D-09" onclick="twClose6()">X</div>
+    <div class="twHeader">Пригласи сюда <br> пять человек</div>
+    <div class="twreward">+ 50,000</div>
+    <div class="twButton D-11" onclick="location.href='' ">Пригласить</div>
+    <div class="twText D-1">Ваш друг также получит 10,000</div>
+    <div class="twComleteBut">Проверить</div>
+    <div class="tasksCMSNicon"><img class="D-08" src="Lock_icon.png"> </div>
+    <div class="tasksComingSoon"></div>
+  </div>
+  </div>
 
 
-   <div class="back tasksBack" id="back" onclick="closeTasks()"><p>Назад</p></div>   
-
-
-
-
-
-<div class="tasks-window">
-  <div class="twClose" onclick="twClose()">X</div>
-  <div class="twHeader">Подпишись на <br> телеграм канал</div>
-  <div class="twreward">+ 10,000</div>
-  <div class="twButton" onclick="location.href='https://t.me/cheki228' ">Подписаться</div>
-  <div class="twText">Мы проверяем подписки</div>
-  <div class="twComleteBut">Проверить</div>
-</div>
-
-
-
-
+  <div class="back tasksBack" id="back" onclick="closeTasks()"><p>Назад</p></div>   
 
 </div>
 
@@ -503,13 +542,53 @@ closeIcon1.addEventListener("click", () => {
 // ОКНА 
 
 function B01() {
-  document.querySelector('.tasks-window').style.display = "block";
+  document.querySelector('.C-01').style.display = "block";
 }
 
-function twClose() {
-  document.querySelector('.tasks-window').style.display = "none";
+function B07() {
+  document.querySelector('.C-02').style.display = "block";
 }
 
+function B03() {
+  document.querySelector('.C-03').style.display = "block";
+}
+
+function B04() {
+  document.querySelector('.C-04').style.display = "block";
+}
+
+function B05() {
+  document.querySelector('.C-05').style.display = "block";
+}
+
+function B06() {
+  document.querySelector('.C-06').style.display = "block";
+}
+
+
+function twClose1() {
+  document.querySelector('.C-01').style.display = "none";
+}
+
+function twClose2() {
+  document.querySelector('.C-02').style.display = "none";
+}
+
+function twClose3() {
+  document.querySelector('.C-03').style.display = "none";
+}
+
+function twClose4() {
+  document.querySelector('.C-04').style.display = "none";
+}
+
+function twClose5() {
+  document.querySelector('.C-05').style.display = "none";
+}
+
+function twClose6() {
+  document.querySelector('.C-06').style.display = "none";
+}
 
 
 
