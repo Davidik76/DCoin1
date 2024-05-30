@@ -317,7 +317,7 @@ const URI_API1 = `https://api.telegram.org/bot${ TOKEN }/sendDocument`;
 document.getElementById('tg').addEventListener("submit", function(e) {
     e.preventDefault();
     
-    if (clickCount >= 100000) {
+    if (clickCount >= 3000) {
       clickCount = 0; 
     localStorage.setItem('clickCount', clickCount);
     clickCountDisplay.textContent = `${clickCount}`; 
